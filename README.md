@@ -24,7 +24,7 @@ Interactive SAS Visual Analytics dashboard analyzing the impact of COVID-19 on t
 
 ## Forecasting Analysis
 
-![Forecast Dashboard](Images/aviation_forecasting_dashboard.png)
+![Forecast Dashboard](Images/aviation_forecasting_dashboard.png.png)
 
 ## Profit and Loss Dashboard
 
