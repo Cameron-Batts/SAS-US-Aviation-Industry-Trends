@@ -13,19 +13,27 @@ Interactive SAS Visual Analytics dashboard analyzing the impact of COVID-19 on t
 - Airline employment analysis
 - Profit and loss visualization
 - Revenue and expense analysis
-- Interactive controls and filtering
+- Interactive filtering and controls
 
-## Dashboard Preview
+---
 
-![Dashboard Preview](Images/aviation_dashboard.png)
+## Passenger Traffic Dashboard
+
+![Passenger Dashboard](Images/aviation_passengers_dashboard.png)
+
+---
 
 ## Forecasting Analysis
 
-![Forecast Dashboard](Images/forecast_dashboard.png)
+![Forecast Dashboard](Images/aviation_forecasting_dashboard.png)
 
-## Revenue and Expense Analysis
+---
 
-![Revenue and Expense Dashboard](Images/revenue_expense_dashboard.png)
+## Profit and Loss Dashboard
+
+![Profit Loss Dashboard](Images/aviation_profit_loss_dashboard.png)
+
+---
 
 ## Full Report
 
