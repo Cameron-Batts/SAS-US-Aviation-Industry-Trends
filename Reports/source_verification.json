@@ -1,0 +1,33 @@
+{
+  "passenger_rows": 48,
+  "fte_rows": 48,
+  "tables": {
+    "ENPLANEMENTS": 48,
+    "FTES": 48,
+    "FINANCIALSDETAILED": 48,
+    "AIRLINEFINANCIALSALL": 45,
+    "TOPAIRLINES": 10
+  },
+  "Domestic_Passengers": {
+    "april_2019": 67.06,
+    "april_2020": 2.86,
+    "april_yoy_percent": -95.73516254100805,
+    "missing_months": [
+      "10/01/2020",
+      "11/01/2020",
+      "12/01/2020"
+    ]
+  },
+  "International_Passengers": {
+    "april_2019": 9.57,
+    "april_2020": 0.13,
+    "april_yoy_percent": -98.6415882967607,
+    "missing_months": [
+      "10/01/2020",
+      "11/01/2020",
+      "12/01/2020"
+    ]
+  },
+  "fte_change_dec2019_oct2020_percent": -19.18580403278559,
+  "q3_revenue_yoy_percent": -72.7146571791139
+}

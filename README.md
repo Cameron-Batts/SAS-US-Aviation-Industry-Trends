@@ -1,58 +1,38 @@
-# U.S. Aviation Industry Trends using SAS Visual Analytics
+# U.S. Aviation Traffic, Employment and Financial Trends
 
-## Overview
+**Author:** Cameron Batts
 
-Interactive SAS Visual Analytics dashboard analyzing the impact of COVID-19 on the U.S. airline industry using U.S. Department of Transportation data. This project explores passenger traffic trends, airline employment, forecasting models, and financial performance before and during the COVID-19 pandemic.
+**Tools:** SAS Visual Analytics / SAS Viya
 
-## Tools Used
+## Problem
+Examine the 2020 disruption in passenger traffic, employment and quarterly airline finances.
 
-* SAS Visual Analytics
-* SAS Viya for Learners
+## Approach
+Review the SAS PDF and independently parse all five included CSV tables. Calculate matched-month passenger changes, the latest observed workforce change and Q3 2019-to-Q3 2020 revenue changes. Treat SAS dots as missing values.
 
-## Dashboard Features
+## Findings
+April 2020 domestic passengers were 2.86 million versus 67.06 million in April 2019, a 95.74% decline. International passengers fell from 9.57 million to 0.13 million (98.64%). Employment fell from 455,566 in December 2019 to 368,162 in October 2020 (19.19%). All Routes operating revenue declined 72.71% between Q3 2019 and Q3 2020.
 
-* Passenger traffic trend analysis
-* Forecasting models
-* Airline employment analysis
-* Profit and loss visualization
-* Revenue and expense analysis
-* Interactive filtering and controls
+## Limitations
+Passenger observations end in September 2020; October through December are missing. Employment observations end in October 2020, with November and December missing. Charts extending into 2021 or 2022 include forecasts, not verified recovery observations. Airline labels such as Merica and Oceanic appear renamed; they do not support identification of real carriers. Financial scaling is not documented in the CSV headers, so percentages and source units are reported without inferring dollar magnitudes. Forecast specification, holdout accuracy and intervals cannot be validated from static exports.
 
----
+## Data and provenance
+Five repository CSV tables cover passenger traffic, employment, airline summaries and financials. Prior documentation attributes the material to U.S. Department of Transportation data, but no original download URL or transformation history is supplied. Carrier labels indicate an adapted teaching extract.
 
-## Passenger Traffic Dashboard
+## Verification
+All five CSV tables parsed; numerical checks executed with the included standard-library Python script. SAS forecasts and native interactions were not rerun.
 
-![Passenger Dashboard](Images/aviation_passengers_dashboard.png)
+## View the project
+- [Analysis report](Reports/sas_us_aviation_industry_trends.html)
+- [Portfolio analysis](https://cameron-batts.github.io/sas_us_aviation_industry_trends.html)
+- [Original PDF export](Reports/U.S.%20Aviation%20Industry%20Trends%20using%20SAS%20Visual%20Analytics%20on%20May%2018%2C%202026.pdf)
 
-This dashboard compares domestic and international passenger traffic trends from 2017 through 2020, highlighting the dramatic decline in air travel during the COVID-19 pandemic.
+## Dashboard previews
+![aviation_forecasting_dashboard.png](Images/aviation_forecasting_dashboard.png.png)
+![aviation_profit_loss_dashboard](Images/aviation_profit_loss_dashboard.png)
+![aviation_passengers_dashboard](Images/aviation_passengers_dashboard.png)
 
----
+## Reproduce and inspect
+Run `python3 Analysis/verify_source.py` from the repository root. No third-party dependencies are required. See `Reports/source_verification.json`.
 
-## Forecasting Dashboard
-
-![Forecast Dashboard](Images/aviation_forecasting_dashboard.png.png)
-
-The forecasting model projects future passenger traffic trends while demonstrating the uncertainty created by unprecedented disruptions during the pandemic period.
-
----
-
-## Profit and Loss Dashboard
-
-![Profit Loss Dashboard](Images/aviation_profit_loss_dashboard.png)
-
-This dashboard analyzes quarterly airline financial performance across major operational categories including revenue, labor, fuel, expenses, and net income.
-
----
-
-## Key Insights
-
-* Passenger traffic sharply declined during COVID-19
-* International passenger traffic recovered slower than domestic travel
-* Airlines experienced significant financial losses beginning in 2020
-* Forecasting models showed high uncertainty following the pandemic disruption
-
----
-
-## Full Report
-
-[View Full Report](Reports/U.S.%20Aviation%20Industry%20Trends%20using%20SAS%20Visual%20Analytics%20on%20May%2018,%202026.pdf)
+The static exports are preserved as historical evidence. Their source captions and map attribution remain intact.
