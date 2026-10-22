@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-22",
+  "scope": "Static export and repository asset audit; no native SAS runtime or source-data reconstruction.",
+  "pdf": "Reports/U.S. Aviation Industry Trends using SAS Visual Analytics on May 18, 2026.pdf",
+  "pdf_sha256": "6acb9879bc84c8fa169f93f9156175fd8d302c09a1e98a9024d7edd2e4b30a81",
+  "pages": 8,
+  "text_extraction_succeeded": true,
+  "native_sas_run": false,
+  "native_report_definition_bundled": false,
+  "raw_source_tables_bundled": true,
+  "source_csv_verification_rerun": true,
+  "source_metrics": {
+    "passenger_rows": 48,
+    "fte_rows": 48,
+    "tables": {
+      "ENPLANEMENTS": 48,
+      "FTES": 48,
+      "FINANCIALSDETAILED": 48,
+      "AIRLINEFINANCIALSALL": 45,
+      "TOPAIRLINES": 10
+    },
+    "Domestic_Passengers": {
+      "april_2019": 67.06,
+      "april_2020": 2.86,
+      "april_yoy_percent": -95.73516254100805,
+      "missing_months": [
+        "10/01/2020",
+        "11/01/2020",
+        "12/01/2020"
+      ]
+    },
+    "International_Passengers": {
+      "april_2019": 9.57,
+      "april_2020": 0.13,
+      "april_yoy_percent": -98.6415882967607,
+      "missing_months": [
+        "10/01/2020",
+        "11/01/2020",
+        "12/01/2020"
+      ]
+    },
+    "fte_change_dec2019_oct2020_percent": -19.18580403278559,
+    "q3_revenue_yoy_percent": -72.7146571791139
+  },
+  "dashboard_page_rendered_for_review": 3,
+  "sample_dashboard_page_visually_reviewed": true
+}
